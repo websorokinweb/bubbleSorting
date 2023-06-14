@@ -2,10 +2,11 @@
 using namespace std;
 
 void bubbleSort(int arrayToSort [], int arraySize){
-    for (int i = 1; i < arraySize; ++i){
+    int temp;
+    for (int i = 0; i < arraySize; ++i){
         for (int g = 1; g < arraySize; ++g){
             if(arrayToSort[g] < arrayToSort[g - 1]){
-                int temp = arrayToSort[g];
+                temp = arrayToSort[g];
                 arrayToSort[g] = arrayToSort[g - 1];
                 arrayToSort[g - 1] = temp;
             }
